@@ -1,0 +1,362 @@
+/*Piergaetano Di Vita O46001380*/          
+
+
+
+
+
+                                            /*Sezione body*/
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+                                            /*Sezione nav*/
+
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+#logo {
+    font-family: 'Limelight';
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+header {
+   
+    height: 300px;
+    background-image: url(https://www.lambesc.fr/fileadmin/user_upload/cinema.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    color: white;
+    text-transform: uppercase;
+}
+
+
+header h1 {
+    width: 780px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+
+#overlay {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+#links a {
+    margin: 0px 5px;
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+a {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    background-color: white;
+    color: rgba(228, 86, 86, 0.7);
+}
+
+
+#profilo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    margin-top: -50px;
+  
+}
+
+#foto {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    background-size: contain;
+    background-size: cover;
+    background-image: url(../mhw3/profilo.jpg); 
+}
+
+#nome {
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+
+                                        /*Sezione centrale*/
+
+article {
+    margin: 20px calc(20%);
+}
+
+#domanda {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+input[type="text"] {
+    margin: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.contenitore {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    font-size: 1.5em;
+    margin: 40px 20px;
+}
+
+.contenitore div {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+#contenitore_anime div {
+    background-image: url(https://www.icrewplay.com/wp-content/uploads/2017/07/manga-giappone-italia.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1);
+}
+
+
+#contenitore_film div {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/862/449/162/jack-reacher-star-wars-interstellar-movie-john-wick-wallpaper-preview.jpg);
+}
+
+
+.nascondi {
+    display: none;
+}
+
+                                            /*Sezione film*/
+#film {
+    padding: 20px;
+    text-align: left;
+}
+
+#film h2 {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+#film h1 {
+    font-size: 1em;
+    color: gray;
+    margin-top: 0px;
+}
+
+#film img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+                                        /*Sezione anime*/
+#anime {
+    padding: 20px;
+    text-align: left;
+}
+
+#anime h2 {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+#anime h1 {
+    font-size: 1em;
+    color: gray;
+    margin-top: 0px;
+}
+
+#anime img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+                                        /*Sezione footer*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+
+    background-color: black;
+    color: white;
+}
+
+footer div {
+    padding: 20px;
+}
+footer div a:link {
+    color: white;
+}
+
+footer div a:hover {
+    background-color: black;
+    color: white;
+}
+
+footer div a:visited {
+    color: gray;
+}
+
+
+/* Usate per far sparire il footer nella fase di ricerca anime/film */
+.risolvi{}
+
+#risolto{}
+
+
+                                            /*Sezione media*/
+
+@media (max-width: 849px) {
+    header h1 {
+        width: fit-content;
+    }
+}
+
+
+@media (max-width: 499px) {
+    header {
+        height: 39vh;
+    }
+
+
+    #logo {
+        font-size: 1.4em;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .box {
+        width: 75%;
+         height: 199px;
+    } 
+
+    article {
+        margin-top: 39px;
+         margin-bottom: 18px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+   
+
+    section .index {
+        width: 4px;
+    }
+
+    section .content {
+         width: 70vw;
+    }
+
+    .img {
+        margin-bottom: 39px;
+    }
+
+    footer {
+        flex-direction: column;
+    justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 747px) {
+    
+    #menu{
+        display: block;
+    }
+
+   
+   
+    #links{
+        display: none;
+    }
+    
+}
+
